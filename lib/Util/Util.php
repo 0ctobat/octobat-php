@@ -88,6 +88,8 @@ abstract class Util
             'payment_recipient_reference' => 'Octobat\\PaymentRecipientReference',
             'payment_source' => 'Octobat\\PaymentSource',
             'payout' => 'Octobat\\Payout',
+            'proforma_invoice' => 'Octobat\\ProformaInvoice',
+            'proforma_invoice_item' => 'Octobat\\ProformaInvoiceItem',
             'tax_evidence' => 'Octobat\\TaxEvidence',
             'tax_evidence_request' => 'Octobat\\TaxEvidenceRequest',
             'tax_region_setting' => 'Octobat\\TaxRegionSetting',

@@ -29,6 +29,7 @@ namespace Octobat;
  * @property int $unrefunded_amount_cents
  * @property string $notes
  * @property string $language
+ * @property string $customer_locale
  * @property string $currency
  * @property string $customer_name
  * @property string $customer_address_line_1

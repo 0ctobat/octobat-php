@@ -28,6 +28,7 @@ namespace Octobat;
  * @property int $unpaid_amount_cents
  * @property string $notes
  * @property string $language
+ * @property string $customer_locale
  * @property string $currency
  * @property string $customer_name
  * @property string $customer_address_line_1
@@ -50,6 +51,7 @@ namespace Octobat;
  * @property string $replaced_by
  * @property OctobatObject $legal_fields
  * @property OctobatObject $sources
+ * @property OctobatObject $metadata
  * @property int $items_count
  * @property Collection $items
  *
@@ -176,4 +178,20 @@ class Invoice extends ApiResource
         $transactions = Transaction::all($params, $this->_opts);
         return $transactions;
     }
+
+
+    /**
+     * @param array|string|null $options
+     *
+     * @return Invoice The confirmed Invoice.
+     */
+    public function createProformaInvoice()
+    {
+        $params = [];
+        $params['invoice'] = $this->id;
+
+        $proforma = ProformaInvoice::create($params, $this->_opts);
+        return $proforma;
+    }
+
 }

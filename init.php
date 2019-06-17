@@ -64,6 +64,8 @@ require(dirname(__FILE__) . '/lib/PaymentRecipient.php');
 require(dirname(__FILE__) . '/lib/PaymentRecipientReference.php');
 require(dirname(__FILE__) . '/lib/PaymentSource.php');
 require(dirname(__FILE__) . '/lib/Payout.php');
+require(dirname(__FILE__) . '/lib/ProformaInvoice.php');
+require(dirname(__FILE__) . '/lib/ProformaInvoiceItem.php');
 require(dirname(__FILE__) . '/lib/TaxEvidence.php');
 require(dirname(__FILE__) . '/lib/TaxEvidenceRequest.php');
 require(dirname(__FILE__) . '/lib/TaxRegionSetting.php');

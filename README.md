@@ -67,8 +67,7 @@ end up there instead of `error_log`:
 
 ### Per-request Configuration
 
-For apps that need to use multiple keys during the lifetime of a process, like
-one that uses [Stripe Connect][connect], it's also possible to set a
+For apps that need to use multiple keys during the lifetime of a process, it's also possible to set a
 per-request key and/or account:
 
 ```php
