@@ -1,5 +1,8 @@
 # Changelog
 
+## 2.0.2 - 2019-10-09
+* Add parameters binding on the invoice#confirm method
+
 ## 2.0.1 - 2019-06-17
 * Add basic support for proforma invoices and proforma invoice items
 * Add the possibility to transform a draft invoice into a proforma

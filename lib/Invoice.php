@@ -99,10 +99,10 @@ class Invoice extends ApiResource
      *
      * @return Invoice The confirmed Invoice.
      */
-    public function confirm($options = null)
+    public function confirm($params = null, $options = null)
     {
         $url = $this->instanceUrl() . '/confirm';
-        list($response, $opts) = $this->_request('patch', $url, null, $options);
+        list($response, $opts) = $this->_request('patch', $url, $params, $options);
         $this->refreshFrom($response, $opts);
         return $this;
     }
