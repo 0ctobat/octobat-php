@@ -1,5 +1,8 @@
 # Changelog
 
+## 2.0.3 - 2020-06-12
+* Fixbug when not using composer. See issue #2.
+
 ## 2.0.2 - 2019-10-09
 * Add parameters binding on the invoice#confirm method
 
