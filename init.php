@@ -70,3 +70,8 @@ require(dirname(__FILE__) . '/lib/TaxEvidence.php');
 require(dirname(__FILE__) . '/lib/TaxEvidenceRequest.php');
 require(dirname(__FILE__) . '/lib/TaxRegionSetting.php');
 require(dirname(__FILE__) . '/lib/Transaction.php');
+
+// Plaza
+require(dirname(__FILE__) . '/lib/Plaza/Account.php');
+require(dirname(__FILE__) . '/lib/Plaza/Capability.php');
+require(dirname(__FILE__) . '/lib/Plaza/CountrySpec.php');

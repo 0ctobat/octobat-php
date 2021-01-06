@@ -66,34 +66,38 @@ abstract class Util
     public static function convertToOctobatObject($resp, $opts)
     {
         $types = [
-            // data structures
-            'list' => 'Octobat\\Collection',
+          // data structures
+          'list' => 'Octobat\\Collection',
 
-            'balance_transaction' => 'Octobat\\BalanceTransaction',
-            'checkout' => 'Octobat\\Checkout',
-            'coupon' => 'Octobat\\Coupon',
-            'credit_note' => 'Octobat\\CreditNote',
-            'credit_note_numbering_sequence' => 'Octobat\\CreditNoteNumberingSequence',
-            'customer' => 'Octobat\\Customer',
-            'document' => 'Octobat\\Document',
-            'document_email_template' => 'Octobat\\DocumentEmailTemplate',
-            'document_language' => 'Octobat\\DocumentLanguage',
-            'document_template' => 'Octobat\\DocumentTemplate',
-            'emails_setting' => 'Octobat\\EmailsSetting',
-            'exports_setting' => 'Octobat\\ExportsSetting',
-            'invoice' => 'Octobat\\Invoice',
-            'invoice_numbering_sequence' => 'Octobat\\InvoiceNumberingSequence',
-            'item' => 'Octobat\\Item',
-            'payment_recipient' => 'Octobat\\PaymentRecipient',
-            'payment_recipient_reference' => 'Octobat\\PaymentRecipientReference',
-            'payment_source' => 'Octobat\\PaymentSource',
-            'payout' => 'Octobat\\Payout',
-            'proforma_invoice' => 'Octobat\\ProformaInvoice',
-            'proforma_invoice_item' => 'Octobat\\ProformaInvoiceItem',
-            'tax_evidence' => 'Octobat\\TaxEvidence',
-            'tax_evidence_request' => 'Octobat\\TaxEvidenceRequest',
-            'tax_region_setting' => 'Octobat\\TaxRegionSetting',
-            'transaction' => 'Octobat\\Transaction'
+          'balance_transaction' => 'Octobat\\BalanceTransaction',
+          'checkout' => 'Octobat\\Checkout',
+          'coupon' => 'Octobat\\Coupon',
+          'credit_note' => 'Octobat\\CreditNote',
+          'credit_note_numbering_sequence' => 'Octobat\\CreditNoteNumberingSequence',
+          'customer' => 'Octobat\\Customer',
+          'document' => 'Octobat\\Document',
+          'document_email_template' => 'Octobat\\DocumentEmailTemplate',
+          'document_language' => 'Octobat\\DocumentLanguage',
+          'document_template' => 'Octobat\\DocumentTemplate',
+          'emails_setting' => 'Octobat\\EmailsSetting',
+          'exports_setting' => 'Octobat\\ExportsSetting',
+          'invoice' => 'Octobat\\Invoice',
+          'invoice_numbering_sequence' => 'Octobat\\InvoiceNumberingSequence',
+          'item' => 'Octobat\\Item',
+          'payment_recipient' => 'Octobat\\PaymentRecipient',
+          'payment_recipient_reference' => 'Octobat\\PaymentRecipientReference',
+          'payment_source' => 'Octobat\\PaymentSource',
+          'payout' => 'Octobat\\Payout',
+          'proforma_invoice' => 'Octobat\\ProformaInvoice',
+          'proforma_invoice_item' => 'Octobat\\ProformaInvoiceItem',
+          'tax_evidence' => 'Octobat\\TaxEvidence',
+          'tax_evidence_request' => 'Octobat\\TaxEvidenceRequest',
+          'tax_region_setting' => 'Octobat\\TaxRegionSetting',
+          'transaction' => 'Octobat\\Transaction',
+
+          'plaza.account' => 'Octobat\\Plaza\\Account',
+          'plaza.capability' => 'Octobat\\Plaza\\Capability',
+          'plaza.country_spec' => 'Octobat\\Plaza\\CountrySpec'
         ];
         if (self::isList($resp)) {
             $mapped = [];
