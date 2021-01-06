@@ -1,5 +1,8 @@
 # Changelog
 
+## 2.1.0 - 2021-01-06
+* Add support for Plaza endpoints
+
 ## 2.0.3 - 2020-06-12
 * Fixbug when not using composer. See issue #2.
 
