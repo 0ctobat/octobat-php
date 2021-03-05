@@ -27,6 +27,7 @@ namespace Octobat;
 class TaxEvidence extends ApiResource
 {
     use ApiOperations\Create;
+    use ApiOperations\Retrieve;
 
 
 }
