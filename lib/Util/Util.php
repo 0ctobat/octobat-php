@@ -97,7 +97,9 @@ abstract class Util
 
           'plaza.account' => 'Octobat\\Plaza\\Account',
           'plaza.capability' => 'Octobat\\Plaza\\Capability',
-          'plaza.country_spec' => 'Octobat\\Plaza\\CountrySpec'
+          'plaza.country_spec' => 'Octobat\\Plaza\\CountrySpec',
+
+          'beanie.session' => 'Octobat\\Beanie\\Session',
         ];
         if (self::isList($resp)) {
             $mapped = [];

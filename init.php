@@ -75,3 +75,6 @@ require(dirname(__FILE__) . '/lib/Transaction.php');
 require(dirname(__FILE__) . '/lib/Plaza/Account.php');
 require(dirname(__FILE__) . '/lib/Plaza/Capability.php');
 require(dirname(__FILE__) . '/lib/Plaza/CountrySpec.php');
+
+// Beanie
+require(dirname(__FILE__) . '/lib/Beanie/Session.php');

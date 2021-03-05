@@ -1,4 +1,6 @@
 # Changelog
+## 2.2.0 - 2021-04-05
+* Add support for Beanie#Session endpoints
 
 ## 2.1.0 - 2021-01-06
 * Add support for Plaza endpoints
