@@ -84,6 +84,7 @@ abstract class Util
           'invoice' => 'Octobat\\Invoice',
           'invoice_numbering_sequence' => 'Octobat\\InvoiceNumberingSequence',
           'item' => 'Octobat\\Item',
+          'order' => 'Octobat\\Order',
           'payment_recipient' => 'Octobat\\PaymentRecipient',
           'payment_recipient_reference' => 'Octobat\\PaymentRecipientReference',
           'payment_source' => 'Octobat\\PaymentSource',
