@@ -52,10 +52,8 @@ class Item extends ApiResource
           $url = '/credit_notes/' . $params['credit_note'] . static::classUrl();
         } elseif ($params['transaction']) {
           $url = '/transactions/' . $params['transaction'] . static::classUrl();
-        } elseif ($params['order']) {
-          $url = '/orders/' . $params['order'] . static::classUrl();
         } else {
-          $msg = "Items cannot be accessed without a CreditNote, Invoice, Transaction ID or Order ID";
+          $msg = "Items cannot be accessed without a CreditNote, Invoice, or Transaction ID";
           throw new Error\Api($msg, null);
         }
 
@@ -93,13 +91,9 @@ class Item extends ApiResource
           $base = Transaction::classUrl();
           $parent = $this['transaction'];
           $path = 'items';
-        } elseif ($this['order']) {
-          $base = Order::classUrl();
-          $parent = $this['order'];
-          $path = 'items';
         } else {
-            $msg = "Items cannot be accessed without a CreditNote, Invoice, Transaction ID or Order ID";
-            throw new Error\Api($msg, null);
+          $msg = "Items cannot be accessed without a CreditNote, Invoice or Transaction ID";
+          throw new Error\Api($msg, null);
         }
         $parentExtn = urlencode(Util\Util::utf8($parent));
         $extn = urlencode(Util\Util::utf8($this['id']));

@@ -1,5 +1,8 @@
 # Changelog
-## 2.2.0 - 2021-04-05
+## 2.3.0 - 2021-04-07
+* Add support for Order endpoints
+
+## 2.2.0 - 2021-03-05
 * Add support for Beanie#Session endpoints
 
 ## 2.1.0 - 2021-01-06

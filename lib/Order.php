@@ -3,7 +3,7 @@
 namespace Octobat;
 
 /**
- * Class Transaction
+ * Class Order
  *
  * @property string $id
  * @property string $object
@@ -25,6 +25,7 @@ namespace Octobat;
  * @property string $created_at
  * @property string $updated_at
  * @property \Octobat\Beanie\Session $beanie_session
+ * @property Collection $order_items
  * @property OctobatObject $metadata
  *
  * @package Octobat
@@ -32,21 +33,7 @@ namespace Octobat;
 class Order extends ApiResource
 {
     use ApiOperations\All;
-    use ApiOperations\Create;
     use ApiOperations\Retrieve;
     use ApiOperations\Update;
-
-    /**
-     * @param array|null $params
-     *
-     * @return array An array of the Order's Items.
-     */
-    public function items($params = null)
-    {
-        $params = $params ?: [];
-        $params['order'] = $this->id;
-        $items = Item::all($params, $this->_opts);
-        return $items;
-    }
 
 }
