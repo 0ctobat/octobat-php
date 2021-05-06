@@ -11,6 +11,7 @@ class RequestOptions
      */
     public static $HEADERS_TO_PERSIST = [
         'Octobat-Version',
+        'Octobat-Account'
     ];
 
     public $headers;
@@ -83,6 +84,10 @@ class RequestOptions
             if (array_key_exists('octobat_version', $options)) {
                 $headers['Octobat-Version'] = $options['octobat_version'];
             }
+            if (array_key_exists('octobat_account', $options)) {
+                $headers['Octobat-Account'] = $options['octobat_account'];
+            }
+            
             return new RequestOptions($key, $headers);
         }
 

@@ -228,13 +228,14 @@ class ApiRequestor
         } else {
             $defaultHeaders['Content-Type'] = 'application/x-www-form-urlencoded';
         }
-
+        
         $combinedHeaders = array_merge($defaultHeaders, $headers);
         $rawHeaders = [];
 
         foreach ($combinedHeaders as $header => $value) {
             $rawHeaders[] = $header . ': ' . $value;
         }
+        
 
         list($rbody, $rcode, $rheaders) = $this->httpClient()->request(
             $method,
