@@ -1,4 +1,7 @@
 # Changelog
+## 2.4.0 - 2021-05-06
+* Add support for Plaza Account-Based requests, persisting the "octobat_account" header
+
 ## 2.3.0 - 2021-04-07
 * Add support for Order endpoints
 
